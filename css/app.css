@@ -1,0 +1,16 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+#language-intro {
+	padding: 5% 0;
+}
+#language-table > tbody > tr > td {
+	vertical-align: middle;
+}
+@media (min-width: 75em) {
+	.container{
+		max-width: 50rem;
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+	}
+}
