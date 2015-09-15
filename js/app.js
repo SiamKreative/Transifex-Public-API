@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 
 	} else {
 
-		$.getJSON('http://query.yahooapis.com/v1/public/yql', {
+		$.getJSON('//query.yahooapis.com/v1/public/yql', {
 				q: 'select * from json where url=\"' + endpoint + '&fmt=JSON\"',
 				format: 'json'
 			},
