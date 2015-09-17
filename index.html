@@ -28,19 +28,19 @@
 			<h4>Languages (<span id="languages-count">...</span>)</h4>
 		</div>
 
-		<div id="language-list">Loading...</div>
+		<div id="language-list" class="table-no-more">Loading...</div>
 
 		<script id="languages-template" type="text/x-handlebars-template">
 		<table id="language-table" class="table table-striped">
 			<tbody>
 				{{#each languages}}
 					<tr>
-						<td>{{language_name}}</td>
-						<td>{{translated_perc}}%</td>
-						<td>
+						<td data-title="Language">{{language_name}}</td>
+						<td data-title="Translated">{{translated_perc}}%</td>
+						<td data-title="View more">
 							<a target="_blank" href="https://www.transifex.com/themeavenue/awesome-support/language/{{language_code}}/">Details</a>
 						</td>
-						<td class="text-right">
+						<td data-title="Download" class="text-right">
 							<a class="btn btn-primary" href="https://www.transifex.com/themeavenue/awesome-support/wpaspot/{{language_code}}/download/for_use/">Download</a>
 						</td>
 					</tr>
